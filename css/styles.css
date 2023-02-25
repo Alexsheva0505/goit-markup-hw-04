@@ -15,6 +15,7 @@
   --clr-hove-media: #31d0aa;
   --clr-icon: #afb1b8;
   --clr-gradiet-hero: rgba(46, 47, 66, 0.7);
+  --clr-color-media-icon: rgba(255, 255, 255, 0.1);
 }
 body {
   background-color: var(--clr-backgraund-main);
@@ -207,7 +208,6 @@ svg {
   border-radius: 4px;
 
   background-color: var(--clr-filtr-beck);
-  outline: 1px solid red;
 }
 .general-item.icon-antenna::before {
   background-image: url(../images/symbol-defs.svg#icon-antenna);
@@ -405,7 +405,11 @@ svg {
   padding-bottom: 100px;
   background-color: var(--clr-primary);
 }
+.container-foot {
+  display: flex;
+}
 .logo-studio-lihgt {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -426,8 +430,12 @@ svg {
 
   color: var(--clr-text-footer);
 }
+.social-media {
+  margin-left: 120px;
+}
 .foot-media {
   color: var(--clr-liht);
+  margin-bottom: 16px;
 }
 .social-link-foot {
   display: flex;
@@ -436,7 +444,7 @@ svg {
   width: 100%;
   height: 100%;
 
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--clr-color-media-icon);
   border-radius: 50%;
   background-size: contain;
   background-position: center;
