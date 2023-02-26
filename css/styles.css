@@ -211,16 +211,19 @@ svg {
   background-color: var(--clr-filtr-beck);
 }
 .icon-antenna::before {
-  width: 64px;
+  background-size: 64px;
   background-image: url(../images/antenna.svg);
 }
-.general-item.icon-clock::before {
+.icon-clock::before {
+  background-size: 64px;
   background-image: url(../images/clock.svg);
 }
-.general-item.icon-diagram::before {
+.icon-diagram::before {
+  background-size: 64px;
   background-image: url(../images/diagram.svg);
 }
-.general-item.icon-astronaut::before {
+.icon-astronaut::before {
+  background-size: 64px;
   background-image: url(../images/astronaut.svg);
 }
 
@@ -398,7 +401,7 @@ svg {
   fill: var(--clr-icon);
 }
 .customers-icon:hover,
-.customers-icon:focus {
+.customers-link:focus .customers-icon {
   fill: var(--clr-hove-beck);
 }
 
